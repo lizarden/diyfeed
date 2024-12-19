@@ -1,0 +1,118 @@
+---
+import diyfeed from '../assets/diyfeed.svg';
+---
+
+<div id="welcomeView" class="container">
+	<div id="mainArea">
+		<img width="96" src={diyfeed.src} id="logo" />
+		<h1>DIYFEED</h1>
+		<div style="border: 1px #494844 solid" />
+		<h2>DIY community-driven<br/>home improvement marketplace</h2>
+	</div>
+	<div id="bottomArea">
+		<p>Estimated to launch in Q3 2025. See you in a bit...</p>
+	</div>
+</div>
+
+<style>
+	body {
+		color: #494844;
+		font-family: "Lexend Peta", serif;
+		font-optical-sizing: auto;
+		font-weight: normal;
+		font-style: normal;
+		margin: 0;
+		padding: 0;
+		height: 100vh;
+		background: linear-gradient(120deg, #FFC85E, #d9ff5e, #ffbc37);
+		background-size: 400% 400%;
+		animation: aurora 10s ease-in-out infinite;
+		overflow: hidden;
+	}
+
+	@keyframes aurora {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+	}
+
+	.container {
+		margin: auto;
+		padding: 24px;
+		max-width: 720px;
+	}
+
+	#welcomeView {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		/* align-items: ; */
+	}
+
+	#logo {
+		margin-bottom: 24px;
+		margin-left: auto;
+		position: absolute;
+		bottom: 24px;
+		right: 24px;
+	}
+
+	#mainArea {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		/* margin-top: 160px; */
+		/* flex: 1; */
+	}
+
+	#bottomArea {
+		/* display: flex; */
+		/* flex-direction: column;
+		justify-content: center; */
+		height: 160px;
+	}
+
+	h1 {
+		font-size: 52px;
+		margin-top: 0.25em;
+	}
+
+	h2 {
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-top: 16px;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.006em;
+		/* padding-bottom: 160px; */
+	}
+
+	@media screen and (max-width: 768px) {
+		h1 {
+			font-size: 40px;
+		}
+
+		h2 {
+			line-height: 1.5;
+			font-size: 16px;
+		}
+
+		p {
+			font-size: 14px;
+		}
+
+		#logo {
+			width: 64px;
+		}
+	}
+</style>
