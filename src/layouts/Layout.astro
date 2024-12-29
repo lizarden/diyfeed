@@ -17,11 +17,11 @@ import logo from '../assets/diyfeed.svg';
 		<meta property="og:description" content={constants.description}>
 		<meta property="og:image" content={logo.src}>
 		<meta property="og:url" content="https://diyfeed.com">
-		<meta name="twitter:card" content={constants.summary}>
+		<meta name="twitter:card" content={constants.pageTitle}>
 		<meta name="twitter:title" content={constants.title}>
 		<meta name="twitter:description" content={constants.description}>
 		<meta name="twitter:image" content={logo.src}>
-		<title>See you in a bit...</title>
+		<title>{constants.pageTitle}</title>
 	</head>
 	<body>
 		<slot />
