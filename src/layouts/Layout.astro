@@ -1,3 +1,8 @@
+---
+import constants from '../constants';
+import logo from '../assets/diyfeed.svg';
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,6 +13,14 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
+		<meta property="og:title" content={constants.title}>
+		<meta property="og:description" content={constants.description}>
+		<meta property="og:image" content={logo.src}>
+		<meta property="og:url" content="https://diyfeed.com">
+		<meta name="twitter:card" content={constants.summary}>
+		<meta name="twitter:title" content={constants.title}>
+		<meta name="twitter:description" content={constants.description}>
+		<meta name="twitter:image" content={logo.src}>
 		<title>See you in a bit...</title>
 	</head>
 	<body>
